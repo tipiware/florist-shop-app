@@ -1,0 +1,196 @@
+@-webkit-keyframes slide-right {
+  from {
+    margin-right: 15em;
+    opacity: 0;
+  }
+
+  to {
+    margin-right: 0em;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    margin-right: 15em;
+    opacity: 0;
+  }
+
+  to {
+    margin-right: 0em;
+    opacity: 1;
+  }
+}
+
+.Sidebar_container {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  height: 100vh;
+  width: 14em;
+  position: fixed;
+  left: -100;
+  top: 0;
+  background-color: #090b0f;
+  opacity: 0;
+  -webkit-animation: slide-right ease-in 1;
+  animation: slide-right ease-in 1;
+
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
+.Sidebar_container_mobile {
+  left: 0;
+}
+
+.Menu_Icon {
+  padding: 1em;
+}
+
+.Close_Icon {
+  padding: 0.5em 0em 1.5em 1em;
+}
+
+.Menu_Icon:hover,
+.Close_Icon:hover {
+  cursor: pointer;
+}
+
+.List_Container,
+.List_Container_Active {
+  width: 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 2em;
+  padding-left: 1.6em;
+  margin-bottom: 1em;
+}
+
+.List_Container:hover {
+  cursor: pointer;
+  border-left: 5px solid #d97979;
+  color: #d97979;
+  margin-left: -5px;
+}
+
+.List_Container h3 {
+  font-weight: 400;
+  font-size: 0.8em;
+  margin: 0em;
+  margin-top: -0.15em;
+  margin-left: 1em;
+  padding: 0em;
+}
+
+.List_Container_Active h3 {
+  font-weight: 600;
+  font-size: 0.8em;
+  margin: 0em;
+  margin-top: -0.15em;
+  margin-left: 1em;
+  padding: 0em;
+}
+
+.Sidebar_container_Web {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+  width: 14em;
+  position: fixed;
+  top: 0;
+  background-color: #090b0f;
+  opacity: 0;
+  -webkit-animation: slide-right ease-in 1;
+  animation: slide-right ease-in 1;
+
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
+.Logut_Button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 6em;
+  height: 2em;
+  margin: auto auto 2em auto;
+  border: 1px solid #d97979;
+}
+
+.Logut_Button:hover {
+  background-color: rgb(217, 121, 121, 0.08);
+  cursor: pointer;
+}
+
+.List_Container_Active {
+  border-left: 5px solid #d97979;
+  font-weight: 600;
+  margin-left: -5px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .Sidebar_container_Web {
+    display: none;
+  }
+
+  .Logut_Button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    bottom: 0;
+    width: 6em;
+    height: 2em;
+    margin-left: 3.5em;
+    margin-bottom: 5em;
+    border: 1px solid #d97979;
+  }
+}
